@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<!-- plantilla html comdata, ejemplo de recopilacion de datos de clientes -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Recopilación de datos Comdata</title>
+	<style>
+		body {font-family: 'Courier New', Courier, monospace;
+			  text-align: justify;}
+	</style>
+</head>
+<body>
+<b>Asunto:</b> Información sobre vacantes de Comdata<br><br>
+Nombre del cliente <b>{{@nombre}} </b><br>
+Número celular con clave internacional: <b>{{@senderId}}</b><br>
+Interesado por <b>{{@trabajo}}</b><br>
+Comentario:<b>{{@comentario}}</b><br>
+En la oficina<b>{{@direccion}}</b><br>
+Distancia<b>{{@distancia}}</b><br>
+Ha trabajado en el grupo antes<b>{{@antes}}</b><br>
+
+<script type="text/javascript">if  (@antes = Sí) {
+	text = "datos {{@datosName}}{{@datosRFC}}"
+} 
+else {
+	text = "tiempo de incorporación{{@incorporacion}}"
+}
+</script>
+
+<!--Si sí: datos <b>{{@datosName}}</b><b>{{@datosRFC}}</b><br>
+Si no: tiempo de incorporación<b>{{@incorporacion}}</b><br>-->
+
+ 
+<br> <br>
+¡Saludos!
+<br> <br>
+
+<footer>
+	<img style="display: block; margin-left: auto; margin-right: auto; width: 130px;" src="https://gus-static-dev.s3.amazonaws.com/gus/logo+azul.png" alt="GusChat">
+</footer>
+</body></html>
