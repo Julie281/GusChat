@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Pago </title>
+    <style type="text/css">
+            .f1{
+                font-family: calibri;
+            }           
+             .form1{
+             	width: 350px;
+             	height: 550px;
+             	margin: 20px auto;
+             	border: 1px solid #A8A8A8 ;
+             	border-radius: 10px;
+             }
+             .r{
+ 
+             	text-align: right;
+             }
+             .c{
+             	text-align: center;
+             }
+             .from2{
+             	width: 132px;
+             	height: 65px;
+             	border: 1px solid #A8A8A8 ;
+             	margin-left: 162px;
+             }         
+    </style>
+</head>
+<body  class="f1">
+     <form action="" method="post" class="form1" >
+                           <h2> Forma de pago </h2>
+                           {{@Precio}}
+                           Campos obligatorios *
+                           <h3> Información de contacto </h3>
+             <dir class =" from2">
+                           <strong> Título <br/> </strong>
+                                   <input type = "radio" name = "sex"> Sr. <br/>
+                                   <input type = "radio" name = "sex"> Sra. <br/>
+             </dir>             
+               <div class ="r">
+                                   Apellido <input type = "text">  <br>
+                                   Primer nombre: * <input type = "text">  <br/>
+                 E.mail：*<input type="text" ><br/>
+                                   Contraseña Code: * <input type = "contraseña"> <br/>
+               </div>
+                           <h3> Mensaje de pago </h3>
+             <div class="c">
+                           tipo de tarjeta: 
+                 <select>
+                     <option selected="selected">Visa</option>
+                                           <option> UnionPay </option>
+                                           <option> Alipay </option>
+                                           <option> WeChat </option>
+                 </select><br/>
+             </div>
+             <div class="r">
+                                 Tarjeta <br> 
+                                 Número: * <input type = "text"> <br/>  
+                                 Fecha de vencimiento de la tarjeta: * <input type = "text"> <br/>
+             </div>
+                           <em> Introduzca el formato mes / año </em> <br/>
+             <div class="c"> 
+                                 <input type = "submit" value = "Confirmar pago" />
+             </div>
+     </form>
+     </form> 
+     <footer>
+        <img style="display: block; margin-left: auto; margin-right: auto; width: 130px;" src="https://gus-static-dev.s3.amazonaws.com/gus/logo+azul.png" alt="GusChat">
+    </footer>
+</body>
